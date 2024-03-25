@@ -8445,8 +8445,8 @@
     },
     "POC.Domain.Models/1.0.0": {
       "type": "project",
-      "path": "../../POC.Application/POC.Domain.Models.csproj",
-      "msbuildProject": "../../POC.Application/POC.Domain.Models.csproj"
+      "path": "../POC.Domain.Models/POC.Domain.Models.csproj",
+      "msbuildProject": "../POC.Domain.Models/POC.Domain.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8481,8 +8481,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj"
+            "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
+              "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj"
             }
           }
         }

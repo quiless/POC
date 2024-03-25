@@ -21,6 +21,6 @@
     <Folder Include="ModelSettings\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\POC\POC.Artifacts\POC.Artifacts.csproj" />
+    <ProjectReference Include="..\POC.Artifacts\POC.Artifacts.csproj" />
   </ItemGroup>
 </Project>

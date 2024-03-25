@@ -6,7 +6,6 @@ using POC.Artifacts.SQL;
 using POC.Artifacts.SQL.Repositories.Interfaces;
 using POC.Artifacts.SQL.Transactions;
 using POC.Artifacts.SQL.Transactions.Interfaces;
-using POC.Domain.Models.Entities;
 using POC.Infrastructure.SQLRepositories;
 using POC.Infrastructure.SQLRepositories.Deliveryman;
 using POC.Infrastructure.SQLRepositories.Interfaces;

@@ -2,6 +2,7 @@
 using POC.Artifacts.Domain.Models;
 using POC.Artifacts.Helpers;
 using POC.Artifacts.SQL.Repositories.Builders;
+using POC.Domain.Models;
 
 namespace POC.Domain.Models.Entities
 {

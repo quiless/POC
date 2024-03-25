@@ -42,9 +42,7 @@
     <Folder Include="QueriesHandlers\Order\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\POC.Artifacts\POC.Artifacts.csproj" />
     <ProjectReference Include="..\POC.Infrastructure\POC.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\POC.Application\POC.Domain.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />

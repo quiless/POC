@@ -9285,8 +9285,8 @@
     },
     "POC.Domain.Models/1.0.0": {
       "type": "project",
-      "path": "../../POC.Application/POC.Domain.Models.csproj",
-      "msbuildProject": "../../POC.Application/POC.Domain.Models.csproj"
+      "path": "../POC.Domain.Models/POC.Domain.Models.csproj",
+      "msbuildProject": "../POC.Domain.Models/POC.Domain.Models.csproj"
     },
     "POC.Infrastructure/1.0.0": {
       "type": "project",
@@ -9298,8 +9298,6 @@
     "net7.0": [
       "Microsoft.ApplicationInsights >= 2.22.0",
       "Microsoft.AspNetCore.Http >= 2.2.2",
-      "POC.Artifacts >= 1.0.0",
-      "POC.Domain.Models >= 1.0.0",
       "POC.Infrastructure >= 1.0.0",
       "PubnubPCL >= 6.19.5"
     ]
@@ -9330,12 +9328,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj"
-            },
-            "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
-            },
             "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
               "projectPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj"
             }

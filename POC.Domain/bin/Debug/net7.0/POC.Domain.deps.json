@@ -10,8 +10,6 @@
         "dependencies": {
           "Microsoft.ApplicationInsights": "2.22.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "POC.Artifacts": "1.0.0",
-          "POC.Domain.Models": "1.0.0",
           "POC.Infrastructure": "1.0.0",
           "PubnubPCL": "6.19.5"
         },

@@ -4,64 +4,6 @@
     "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj",
-        "projectName": "POC.Domain.Models",
-        "projectPath": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj",
-        "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC.Application/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/jefferson/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/generalclaims/_packaging/GeneralClaimsDotNet/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -178,6 +120,64 @@
         }
       }
     },
+    "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
+        "projectName": "POC.Domain.Models",
+        "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
+        "packagesPath": "/Users/jefferson/.nuget/packages/",
+        "outputPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jefferson/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/generalclaims/_packaging/GeneralClaimsDotNet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -201,8 +201,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj"
+              "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj"
               }
             }
           }

@@ -4,8 +4,8 @@
 /Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Artifacts.dll
 /Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Domain.Models.dll
 /Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Infrastructure.dll
-/Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Artifacts.pdb
 /Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Infrastructure.pdb
+/Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Artifacts.pdb
 /Users/jefferson/Projects/POC/POC.Domain/bin/Debug/net7.0/POC.Domain.Models.pdb
 /Users/jefferson/Projects/POC/POC.Domain/obj/Debug/net7.0/POC.Domain.csproj.AssemblyReference.cache
 /Users/jefferson/Projects/POC/POC.Domain/obj/Debug/net7.0/POC.Domain.GeneratedMSBuildEditorConfig.editorconfig

@@ -8427,8 +8427,8 @@
     },
     "POC.Artifacts/1.0.0": {
       "type": "project",
-      "path": "../POC/POC.Artifacts/POC.Artifacts.csproj",
-      "msbuildProject": "../POC/POC.Artifacts/POC.Artifacts.csproj"
+      "path": "../POC.Artifacts/POC.Artifacts.csproj",
+      "msbuildProject": "../POC.Artifacts/POC.Artifacts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8442,11 +8442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj",
+      "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
       "projectName": "POC.Domain.Models",
-      "projectPath": "/Users/jefferson/Projects/POC.Application/POC.Domain.Models.csproj",
+      "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
       "packagesPath": "/Users/jefferson/.nuget/packages/",
-      "outputPath": "/Users/jefferson/Projects/POC.Application/obj/",
+      "outputPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jefferson/.nuget/NuGet/NuGet.Config"
