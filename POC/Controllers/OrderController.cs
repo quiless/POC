@@ -24,6 +24,9 @@ namespace POC.API.Controllers
     [Route("api/v{version:apiVersion}/orders", Name = "Order")]
     public class OrderController : ApiControllerBase<OrderController>
     {
+        /// <summary>
+        /// Construtor da controladora de pedidos.
+        /// </summary>
         public OrderController(
             ILogger<OrderController> logger,
             IMediator mediator,

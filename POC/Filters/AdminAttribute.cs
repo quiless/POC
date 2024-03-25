@@ -5,10 +5,15 @@ using POC.Domain.Models.Context;
 
 namespace POC.API.Filters
 {
-	
+
+    /// <summary>
+    /// Filtro de autorização para administradores
+    /// </summary>
     public class AdminKeyAttribute : TypeFilterAttribute
     {
-
+        /// <summary>
+        /// Construtor do filtro de autorização para administradores
+        /// </summary>
         public AdminKeyAttribute() : base(typeof(ValidateAdminFilter))
         {
 

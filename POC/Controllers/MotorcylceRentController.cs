@@ -25,6 +25,9 @@ namespace POC.API.Controllers
     [Route("api/v{version:apiVersion}/rent", Name = "Rental")]
     public class MotorcylceRentController : ApiControllerBase<MotorcylceRentController>
     {
+        /// <summary>
+        /// Construtor da controladora de locações de motos.
+        /// </summary>
         public MotorcylceRentController(
             ILogger<MotorcylceRentController> logger,
             IMediator mediator,
@@ -35,10 +38,10 @@ namespace POC.API.Controllers
 
 
         /// <summary>
-        /// Planos de locação
+        /// Planos de locação.
         /// </summary>
         /// <remarks>
-        /// Obtêm os planos de locação ativos no momento
+        /// Obtêm os planos de locação ativos no momento.
         /// </remarks>
         /// <response code="200">
         /// Operação executada com sucesso!
@@ -67,7 +70,7 @@ namespace POC.API.Controllers
 
 
         /// <summary>
-        /// Alugar uma moto
+        /// Alugar uma moto.
         /// </summary>
         /// <remarks>
         /// Reserva uma moto para o entregador autenticado.

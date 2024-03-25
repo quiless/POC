@@ -28,6 +28,9 @@ namespace POC.API.Controllers
     [Route("api/v{version:apiVersion}/deliveryman", Name = "Deliveryman")]
     public class DeliverymanController : ApiControllerBase<DeliverymanController>
     {
+        /// <summary>
+        /// Construtor da controladora de entregadores.
+        /// </summary>
         public DeliverymanController(
             ILogger<DeliverymanController> logger,
             IMediator mediator,

@@ -9,16 +9,24 @@ using POC.Infrastructure.SQLRepositories.Interfaces;
 
 namespace POC.API.Services
 {
+    /// <summary>
+    /// Serviço Identity4 para conexão de usuários
+    /// </summary>
     public class ProfileService : IProfileService
     {
         private IMediator _mediator { get; set; }
 
+        /// <summary>
+        /// Construtor do serviço de usuários Identity4
+        /// </summary>
         public ProfileService(IMediator mediator)
         {
             _mediator = mediator;
         }
 
-
+        /// <summary>
+        /// Adiciona CLAIMS customizadas ao token de autenticação
+        /// </summary>
         public async Task GetProfileDataAsync(ProfileDataRequestContext context)
         {
             var _user = await _mediator.Send(new GetUserByUsernameQuery(context.Subject.Claims.FirstOrDefault(x => x.Type == JwtClaimTypes.Subject).Value));
@@ -38,6 +46,9 @@ namespace POC.API.Services
 
         }
 
+        /// <summary>
+        /// Validar do contexto do usuário
+        /// </summary>
         public async Task IsActiveAsync(IsActiveContext context)
         {
             context.IsActive = true;

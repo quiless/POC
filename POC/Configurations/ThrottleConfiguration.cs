@@ -3,8 +3,14 @@ using ThrottlR;
 
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// SETUP Throttle
+    ///</Summary>
     public static class ThrottleConfiguration
     {
+        ///<Summary>
+        /// Política de throttle para evitar utilizações de robôs
+        ///</Summary>
         public static WebApplicationBuilder AddThrottleConfiguration(this WebApplicationBuilder builder)
         {
             if (builder == null)

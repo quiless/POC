@@ -21,6 +21,9 @@ namespace POC.API.Controllers
     [Route("api/v{version:apiVersion}/motorcycle-brand", Name = "MotorcycleBrand")]
     public class MotorcycleBrandController : ApiControllerBase<DeliverymanController>
     {
+        /// <summary>
+        /// Construtor da controladora de marcas de motos.
+        /// </summary>
         public MotorcycleBrandController(
             ILogger<DeliverymanController> logger,
             IMediator mediator,

@@ -5,8 +5,14 @@ using POC.Artifacts.AzureStorage.Settings;
 
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// Setup do Azure Storage
+    ///</Summary>
 	public static class BlobStorageConfiguration
 	{
+        ///<Summary>
+        /// Adiciona o serviço Azure Storage com as configurações settadas no arquivo appsettings.*.json
+        ///</Summary>
         public static void AddAzureBlobStorage(this IServiceCollection services, IConfiguration configuration)
         {
             if (services == null)

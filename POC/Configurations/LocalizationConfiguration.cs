@@ -4,8 +4,14 @@ using System.Globalization;
 
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// SETUP de linguagem 
+    ///</Summary>
     public static class LocalizationConfiguration
     {
+        ///<Summary>
+        /// Adiciona linguagem padrão PT-BR
+        ///</Summary>
         public static void UseLocalizationConfiguration(this IApplicationBuilder app)
         {
             var supportedCultures = new[]{

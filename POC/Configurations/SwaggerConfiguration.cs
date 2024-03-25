@@ -7,8 +7,15 @@ using System.Reflection;
 
 namespace POC.API.Configurations
 {
-	public static class SwaggerConfiguration
+    ///<Summary>
+    /// SETUP Swagger
+    ///</Summary>
+    public static class SwaggerConfiguration
 	{
+
+        ///<Summary>
+        /// Customiza a interface do Swagger
+        ///</Summary>
         public static WebApplicationBuilder AddSwaggerConfiguration(this WebApplicationBuilder builder)
         {
           

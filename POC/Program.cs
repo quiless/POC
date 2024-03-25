@@ -66,9 +66,14 @@ app.UseAuthentication();
 app.Run();
 
 
-
+/// <summary>
+/// Estrutura de dados do C#
+/// </summary>
 
 public partial class Program
 {
+    /// <summary>
+    /// Construtor da estrutura de dados do C#
+    /// </summary>
     protected Program() { }
 }

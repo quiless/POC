@@ -1,8 +1,15 @@
 ﻿using System;
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// SETUP cabeçalhos de segurança
+    ///</Summary>
     public static class SecurityHeadersConfiguration
     {
+
+        ///<Summary>
+        /// Adiciona cabeçalhos de segurança nas respostas do serviço.
+        ///</Summary>
         public static IApplicationBuilder UseSecurityHeaders(this IApplicationBuilder app)
         {
             if (app == null)

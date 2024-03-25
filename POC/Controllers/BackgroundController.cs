@@ -22,6 +22,9 @@ namespace POC.API.Controllers
     [Route("api/v{version:apiVersion}/background-services", Name = "Background Jobs")]
     public class BackgroundController : ApiControllerBase<BackgroundController>
     {
+        /// <summary>
+        /// Construtor da controladora de rotinas em background
+        /// </summary>
         public BackgroundController(
             ILogger<BackgroundController> logger,
             IMediator mediator,

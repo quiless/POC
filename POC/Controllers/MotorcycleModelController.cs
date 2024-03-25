@@ -16,12 +16,15 @@ using POC.Domain.Queries.Motorcycle;
 namespace POC.API.Controllers
 {
     /// <summary>
-    /// Controladora de marcas de moto.
+    /// Controladora de modelos de moto.
     /// </summary>
     [ApiController, ApiVersion("1.0"), EnableThrottle, Consumes(MediaTypeNames.Application.Json), Produces(MediaTypeNames.Application.Json)]
     [Route("api/v{version:apiVersion}/motorcycle-model", Name = "MotorcycleModel")]
     public class MotorcycleModelController : ApiControllerBase<DeliverymanController>
     {
+        /// <summary>
+        /// Construtor da controladora de modelos de motos.
+        /// </summary>
         public MotorcycleModelController(
             ILogger<DeliverymanController> logger,
             IMediator mediator,

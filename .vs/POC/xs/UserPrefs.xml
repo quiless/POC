@@ -1,204 +1,25 @@
 ﻿<Properties StartupConfiguration="{28C4690C-65B8-45F6-8E8A-CD971F39C5F6}|https" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="POC.Artifacts/SQL/SqlContextBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="POC.Infrastructure/SQLRepositories/Deliveryman/DriverLicenseRepository.cs">
     <Files>
-      <File FileName="POC.Domain/CommandsHandlers/MotorcycleCommandHandler.cs" Line="44" Column="44" IsPinned="True" />
-      <File FileName="Notification.html" Line="52" Column="1" IsPinned="True" />
-      <File FileName="POC/appsettings.json" />
-      <File FileName="POC/Program.cs" />
-      <File FileName="POC.Artifacts/Domain/Responses/Interfaces/ICommandResult.cs" />
-      <File FileName="POC/Services/ProfileService.cs" />
-      <File FileName="POC.Domain/QueriesHandlers/Users/UserQueryHandler.cs" />
-      <File FileName="POC.Domain/Queries/Users/ValidateUserAuthenticationQuery.cs" />
-      <File FileName="../POC.Application/Context/ApplicationContext.cs" />
-      <File FileName="POC/Controllers/DeliverymanController.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Motorcycle/MotorcycleBrandRepository.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Interfaces/Motorcycle/IMotorcycleModelRepository.cs" />
-      <File FileName="POC.Infrastructure/Bootstrapper.cs" />
-      <File FileName="POC.Domain/QueriesHandlers/Motorcycle/MotorcycleModelQueryHandler.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcycleBrandByNameQuery.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcycleBrandByIdQuery.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcycleModelsQuery.cs" />
-      <File FileName="POC.Domain/QueriesHandlers/Motorcycle/MotorcycleBrandQueryHandler.cs" />
-      <File FileName="POC/Controllers/MotorcycleModelController.cs" />
-      <File FileName="POC/Controllers/MotorcycleBrandController.cs" />
-      <File FileName="../POC.Application/Context/ApplicationContextBase.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Helpers/RegisterMappings.cs" />
-      <File FileName="../POC.Application/Entities/DriverLicenseType.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Motorcycle/MotorcycleModelRepository.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcycleBrandsQuery.cs" />
-      <File FileName="POC.Artifacts/Application/FailFastRequestBehavior.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Extensions/AutoMapBuilderEntityMap.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/RepositoryBase.cs" />
-      <File FileName="POC.Infrastructure/SqlContext.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Builders/BuilderExtension.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcycleModelByNameQuery.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Builders/UseAutoMapBuilder.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/GetMotorcyclesQuery.cs" />
-      <File FileName="POC.Domain/Queries/Motorcycle/SearchMotorcyclesQuery.cs" />
-      <File FileName="POC/Controllers/MotorcycleController.cs" />
-      <File FileName="POC/Controllers/OrderController.cs" />
-      <File FileName="../POC.Application/Enumerations/DriverLicenseTypeEnum.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/AzureBlob.cs" />
-      <File FileName="POC/Configurations/SwaggerConfiguration.cs" />
-      <File FileName="POC.Domain/Commands/Deliveryman/RegisterDeliverymanCommand.cs" />
-      <File FileName="POC.Artifacts/Helpers/StringHelper.cs" />
-      <File FileName="POC/Security/ResourceOwnerPasswordValidatorCustom.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/Inferfaces/IBlob.cs" />
-      <File FileName="POC.Domain/Commands/Rental/RentMotorcycleCommand.cs" />
-      <File FileName="POC.Domain/Queries/Users/GetUserByUsernameQuery.cs" />
-      <File FileName="../POC.Application/Context/TenantIdentity.cs" />
-      <File FileName="POC/Filters/DeliverymanAttribute.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Interfaces/IUserRepository.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/UserRepository.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Interfaces/Motorcycle/IMotorcycleRepository.cs" />
-      <File FileName="../POC.Application/Aggregators/CheckMotorcycleRentPrice.cs" />
-      <File FileName="POC.Domain/CommandsHandlers/RentMotorcycleCommandHandler.cs" />
-      <File FileName="../POC.Application/ModelSettings/AuthenticationSetting.cs" />
-      <File FileName="POC/appsettings.Development.json" />
-      <File FileName="POC/Configurations/ThrottleConfiguration.cs" />
-      <File FileName="POC.Domain/Commands/Deliveryman/RefreshDeliverymanDriverLicenseFileCommand.cs" />
-      <File FileName="POC.Domain/Commands/Order/RegisterOrderCommand.cs" />
-      <File FileName="POC.Domain/Queries/Deliveryman/GeDeliverymanDriverLicenseFileQuery.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Order/OrderNotificationRepository.cs" />
-      <File FileName="POC.Domain/POC.Domain.csproj" />
-      <File FileName="POC.Domain/Bootstrapper.cs" />
-      <File FileName="POC/POC.API.csproj" />
-      <File FileName="../POC.Application/Environments.cs" />
-      <File FileName="POC/Controllers/BackgroundController.cs" />
-      <File FileName="POC.Artifacts/Presentation/ApiControllerBase.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/Order/OrderRepository.cs" />
-      <File FileName="POC/Filters/AdminAttribute.cs" />
-      <File FileName="POC.Domain/Commands/Order/OrderFinishedCommand.cs" />
-      <File FileName="POC.Domain/Commands/Order/OrderAcceptedCommand.cs" />
-      <File FileName="POC.Domain/Commands/Order/NotifyDelivermansCommand.cs" />
-      <File FileName="POC.Domain/Commands/Order/NotifyDeliveriesPendingOrdersCommand.cs" />
-      <File FileName="POC.Domain/Commands/Deliveryman/SetDeliverymanrOpenRentCommand.cs" />
-      <File FileName="POC.Domain/QueriesHandlers/Order/OrderQueryHandler.cs" />
-      <File FileName="../POC.Application/Aggregators/OrdersRegistered.cs" />
-      <File FileName="../POC.Application/Aggregators/NotificationSent.cs" />
-      <File FileName="POC.Infrastructure/SQLRepositories/RentMotorcycle/RentMotorcycleRepository.cs" />
-      <File FileName="POC/Configurations/IdentityServerConfiguration.cs" />
-      <File FileName="POC.Domain/Queries/Order/GetOrderNotificationsQuery.cs" />
-      <File FileName="POC/Configurations/ApiVersionConfiguration.cs" />
-      <File FileName="POC/Configurations/BlobStorageConfiguration.cs" />
-      <File FileName="POC/Configurations/LocalizationConfiguration.cs" />
-      <File FileName="POC/Configurations/MediatRConfiguration.cs" />
-      <File FileName="POC/Configurations/SecurityHeadersConfiguration.cs" />
-      <File FileName="POC.Artifacts/Application/Enumeration.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/Models/BlobData.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/Models/BlobSharedAccessSignature.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/Settings/AzureStorageSettings.cs" />
-      <File FileName="POC.Artifacts/AzureStorage/Helper.cs" />
-      <File FileName="POC.Artifacts/Domain/Enumerators/DomainNotificationType.cs" />
-      <File FileName="POC.Artifacts/Domain/Interfaces/IDomainEventDispatcher.cs" />
-      <File FileName="POC.Artifacts/Domain/Interfaces/IDomainNotificationContext.cs" />
-      <File FileName="POC.Artifacts/Domain/Models/DomainNotification.cs" />
-      <File FileName="POC.Artifacts/Domain/Models/Entity.cs" />
-      <File FileName="POC.Artifacts/Domain/Responses/ErrorResponse.cs" />
-      <File FileName="POC.Artifacts/Domain/Responses/GenericCommandResult.cs" />
-      <File FileName="POC.Artifacts/Domain/DomainNotificationContext.cs" />
-      <File FileName="POC.Artifacts/Helpers/DateHelper.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Builders/AutoMapBuilder.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Interfaces/IRepository.cs" />
-      <File FileName="POC.Artifacts/SQL/Repositories/Models/EntityBase.cs" />
-      <File FileName="POC.Artifacts/SQL/Transactions/Interfaces/IUnitOfWork.cs" />
-      <File FileName="POC.Artifacts/SQL/Transactions/UnitOfWorkTransaction.cs" />
-      <File FileName="POC.Artifacts/SQL/SqlContextBase.cs" Line="1" Column="1" />
+      <File FileName="POC.Domain.Models/Context/ApplicationContext.cs" Line="2" Column="17" />
+      <File FileName="POC.Domain.Models/Context/ApplicationContextBase.cs" Line="1" Column="1" />
+      <File FileName="POC.Domain.Models/Entities/MotorcycleRental.cs" Line="8" Column="15" />
+      <File FileName="POC.Domain.Models/Entities/Deliveryman.cs" Line="26" Column="16" />
+      <File FileName="POC.Infrastructure/Bootstrapper.cs" Line="8" Column="49" />
+      <File FileName="POC.Infrastructure/SQLRepositories/Deliveryman/DriverLicenseRepository.cs" Line="5" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="POC" expanded="True">
-            <Node name="Solution Items" expanded="True" />
-            <Node name="POC.API" expanded="True" selected="True">
-              <Node name="Configurations" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Filters" expanded="True" />
-              <Node name="Security" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
-            <Node name="POC.Artifacts" expanded="True">
-              <Node name="Application" expanded="True" />
-              <Node name="AzureStorage" expanded="True">
-                <Node name="Inferfaces" expanded="True" />
-                <Node name="Models" expanded="True" />
-                <Node name="Settings" expanded="True" />
-              </Node>
-              <Node name="Domain" expanded="True">
-                <Node name="Enumerators" expanded="True" />
-                <Node name="Interfaces" expanded="True" />
-                <Node name="Models" expanded="True" />
-                <Node name="Responses" expanded="True">
-                  <Node name="Interfaces" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Helpers" expanded="True" />
-              <Node name="Presentation" expanded="True" />
-              <Node name="SQL" expanded="True">
-                <Node name="Repositories" expanded="True">
-                  <Node name="Builders" expanded="True" />
-                  <Node name="Extensions" expanded="True" />
-                  <Node name="Interfaces" expanded="True" />
-                  <Node name="Models" expanded="True" />
-                </Node>
-                <Node name="Transactions" expanded="True">
-                  <Node name="Interfaces" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="POC.Domain" expanded="True">
-              <Node name="Commands" expanded="True">
-                <Node name="Deliveryman" expanded="True" />
-                <Node name="Motorcycle" expanded="True" />
-                <Node name="Order" expanded="True" />
-                <Node name="Rental" expanded="True" />
-              </Node>
-              <Node name="CommandsHandlers" expanded="True" />
-              <Node name="Queries" expanded="True">
-                <Node name="Deliveryman" expanded="True" />
-                <Node name="Motorcycle" expanded="True" />
-                <Node name="Order" expanded="True" />
-                <Node name="Rental" expanded="True" />
-                <Node name="Users" expanded="True" />
-              </Node>
-              <Node name="QueriesHandlers" expanded="True">
-                <Node name="Deliveryman" expanded="True" />
-                <Node name="Motorcycle" expanded="True" />
-                <Node name="Order" expanded="True" />
-                <Node name="Rental" expanded="True" />
-                <Node name="Users" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="POC.Domain.Models" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Aggregators" expanded="True" />
-              <Node name="Context" expanded="True" />
-              <Node name="Entities" expanded="True" />
-              <Node name="Enumerations" expanded="True" />
-              <Node name="ModelSettings" expanded="True" />
-            </Node>
-            <Node name="POC.Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="SQLRepositories" expanded="True">
-                <Node name="Deliveryman" expanded="True" />
-                <Node name="Helpers" expanded="True" />
-                <Node name="Interfaces" expanded="True">
-                  <Node name="Deliveryman" expanded="True" />
-                  <Node name="Motorcycle" expanded="True" />
-                  <Node name="Order" expanded="True" />
-                  <Node name="RentMotorcycle" expanded="True" />
-                </Node>
-                <Node name="Motorcycle" expanded="True" />
-                <Node name="Order" expanded="True" />
-                <Node name="RentMotorcycle" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="POC" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <DisabledProjects>
+    <String>../POC.Application/POC.Domain.Models.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.POC.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

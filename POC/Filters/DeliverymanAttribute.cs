@@ -5,10 +5,14 @@ using POC.Domain.Models.Context;
 
 namespace POC.API.Filters
 {
-	
+    /// <summary>
+    /// Filtro de autorização para entregadores
+    /// </summary>
     public class DeliverymanAttribute : TypeFilterAttribute
     {
-
+        /// <summary>
+        /// Construtor do filtro de autorização para entregadores
+        /// </summary>
         public DeliverymanAttribute() : base(typeof(ValidateDeliverymanFilter))
         {
 

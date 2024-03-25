@@ -9,11 +9,17 @@ using POC.Domain.Queries.Users;
 
 namespace POC.API.Security
 {
+    /// <summary>
+    /// Autenticador Identity4
+    /// </summary>
     public class ResourceOwnerPasswordValidatorCustom : IResourceOwnerPasswordValidator
     {
         private readonly int _expirationTimeInMinutes;
         private readonly IMediator _mediator;
 
+        /// <summary>
+        /// Construtor da classe autenticadora
+        /// </summary>
         public ResourceOwnerPasswordValidatorCustom(
             IConfiguration configuration,
             IMediator mediator)
@@ -22,6 +28,10 @@ namespace POC.API.Security
             _mediator = mediator;
         }
 
+
+        /// <summary>
+        /// Valida a conexão do usuário -> Métodos password
+        /// </summary>
         public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
             Dictionary<string, object> customResponse = new Dictionary<string, object>()

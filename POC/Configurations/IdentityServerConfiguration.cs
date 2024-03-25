@@ -15,8 +15,14 @@ using static System.Net.WebRequestMethods;
 
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// SETUP IdentityServer4
+    ///</Summary>
     public static class IdentityServerConfig
     {
+        ///<Summary>
+        /// Configuração de autenticação e autorização dos serviços
+        ///</Summary>
         public static IServiceCollection SetIdentityServerConfiguration(this IServiceCollection services,
             IConfiguration configuration)
         {

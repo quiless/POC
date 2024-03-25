@@ -8,8 +8,14 @@ using POC.Artifacts.Domain.Interfaces;
 
 namespace POC.API.Configurations
 {
+    ///<Summary>
+    /// SETUP MediatR
+    ///</Summary>
 	public static class MediatRConfiguration
 	{
+        ///<Summary>
+        /// Configura contexto de notificação + FluentValidator
+        ///</Summary>
         public static WebApplicationBuilder AddMediatRConfiguration(this WebApplicationBuilder builder)
         {
             if (builder == null)
