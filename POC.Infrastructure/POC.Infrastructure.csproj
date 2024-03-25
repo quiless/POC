@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SQLRepositories\" />
+    <None Remove="SQLRepositories\Interfaces\" />
+    <None Remove="SQLRepositories\Helpers\" />
+    <None Remove="SQLRepositories\Interfaces\Motorcycle\" />
+    <None Remove="SQLRepositories\Motorcycle\" />
+    <None Remove="SQLRepositories\Interfaces\Deliveryman\" />
+    <None Remove="SQLRepositories\Deliveryman\" />
+    <None Remove="SQLRepositories\Interfaces\RentMotorcycle\" />
+    <None Remove="SQLRepositories\RentMotorcycle\" />
+    <None Remove="SQLRepositories\Interfaces\Order\" />
+    <None Remove="SQLRepositories\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQLRepositories\" />
+    <Folder Include="SQLRepositories\Interfaces\" />
+    <Folder Include="SQLRepositories\Helpers\" />
+    <Folder Include="SQLRepositories\Interfaces\Motorcycle\" />
+    <Folder Include="SQLRepositories\Motorcycle\" />
+    <Folder Include="SQLRepositories\Interfaces\Deliveryman\" />
+    <Folder Include="SQLRepositories\Deliveryman\" />
+    <Folder Include="SQLRepositories\Interfaces\RentMotorcycle\" />
+    <Folder Include="SQLRepositories\RentMotorcycle\" />
+    <Folder Include="SQLRepositories\Interfaces\Order\" />
+    <Folder Include="SQLRepositories\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper.FluentMap.Dommel" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\POC.Application\POC.Domain.Models.csproj" />
+  </ItemGroup>
+</Project>

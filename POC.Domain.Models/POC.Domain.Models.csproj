@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Enumerations\" />
+    <None Remove="Context\" />
+    <None Remove="Aggregators\" />
+    <None Remove="ModelSettings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Enumerations\" />
+    <Folder Include="Context\" />
+    <Folder Include="Aggregators\" />
+    <Folder Include="ModelSettings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POC\POC.Artifacts\POC.Artifacts.csproj" />
+  </ItemGroup>
+</Project>

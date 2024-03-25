@@ -1,0 +1,17 @@
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Infrastructure.deps.json
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Infrastructure.dll
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Infrastructure.pdb
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Artifacts.dll
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Domain.Models.dll
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Domain.Models.pdb
+/Users/jefferson/Projects/POC/POC.Infrastructure/bin/Debug/net7.0/POC.Artifacts.pdb
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.csproj.AssemblyReference.cache
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.AssemblyInfoInputs.cache
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.AssemblyInfo.cs
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.csproj.CopyComplete
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.dll
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/refint/POC.Infrastructure.dll
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/POC.Infrastructure.pdb
+/Users/jefferson/Projects/POC/POC.Infrastructure/obj/Debug/net7.0/ref/POC.Infrastructure.dll

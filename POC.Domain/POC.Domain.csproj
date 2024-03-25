@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Commands\" />
+    <None Remove="QueriesHandlers\" />
+    <None Remove="Queries\Users\" />
+    <None Remove="QueriesHandlers\Users\" />
+    <None Remove="QueriesHandlers\Motorcycle\" />
+    <None Remove="Queries\Motorcycle\" />
+    <None Remove="CommandHandlers\" />
+    <None Remove="Commands\Motorcycle\" />
+    <None Remove="Commands\Deliveryman\" />
+    <None Remove="Commands\Rental\" />
+    <None Remove="Queries\Rental\" />
+    <None Remove="QueriesHandlers\Rental\" />
+    <None Remove="Commands\Order\" />
+    <None Remove="Queries\Order\" />
+    <None Remove="QueriesHandlers\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Queries\" />
+    <Folder Include="QueriesHandlers\" />
+    <Folder Include="Queries\Users\" />
+    <Folder Include="QueriesHandlers\Users\" />
+    <Folder Include="Commands\" />
+    <Folder Include="QueriesHandlers\Motorcycle\" />
+    <Folder Include="Queries\Motorcycle\" />
+    <Folder Include="CommandsHandlers\" />
+    <Folder Include="Commands\Motorcycle\" />
+    <Folder Include="Commands\Deliveryman\" />
+    <Folder Include="Commands\Rental\" />
+    <Folder Include="Queries\Rental\" />
+    <Folder Include="QueriesHandlers\Rental\" />
+    <Folder Include="Commands\Order\" />
+    <Folder Include="Queries\Order\" />
+    <Folder Include="QueriesHandlers\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POC.Artifacts\POC.Artifacts.csproj" />
+    <ProjectReference Include="..\POC.Infrastructure\POC.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\POC.Application\POC.Domain.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.22.0" />
+    <PackageReference Include="PubnubPCL" Version="6.19.5" />
+  </ItemGroup>
+</Project>

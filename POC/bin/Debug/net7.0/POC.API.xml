@@ -1,0 +1,570 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>POC.API</name>
+    </assembly>
+    <members>
+        <member name="T:POC.API.Controllers.BackgroundController">
+            <summary>
+            Executar rotinas em background.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.BackgroundController.NotifyDeliveriesPendingOrdersAsync">
+            <summary>
+            Processar fila de pedidos pendentes.
+            </summary>
+            <remarks>
+            Busca entregadores para pedidos que ainda não foram aceitos.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.DeliverymanController">
+            <summary>
+            Controladora de entregadores.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.DeliverymanController.RegisterDeliverymanAsync(POC.Domain.Commands.Deliveryman.RegisterDeliverymanCommand)">
+            <summary>
+            Cadastro de novo entregador.
+            </summary>
+            <remarks>
+            Registra um novo entregador na aplicação.
+            Parâmetros via formData para facilitar envio do arquivo no Swagger. Poderia utilizar base64, mas seria necessário realizar a conversão no momento de utilização.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.DeliverymanController.RefreshDeliverymanDriverLicenseFileAsync(POC.Domain.Commands.Deliveryman.RefreshDeliverymanDriverLicenseFileCommand)">
+            <summary>
+            Atualizar imagem da CNH do entregador que está autenticado.
+            </summary>
+            <remarks>
+            Substitui a imagem da CNH atual, pela nova imagem.
+            Parâmetros via formData para facilitar envio do arquivo no Swagger. Poderia utilizar base64, mas seria necessário realizar a conversão no momento de utilização.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.DeliverymanController.DownloadDriverLicenseFileAsync(POC.Domain.Queries.Deliverymans.GeDeliverymanDriverLicenseFileQuery)">
+            <summary>
+            Buscar imagem da CNH.
+            </summary>
+            <remarks>
+            Retorna a URL da imagem da CNH do entregador autenticado.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.DeliverymanController.GetDeliverymanInfoAsync">
+            <summary>
+            Buscar informações do entregador.
+            </summary>
+            <remarks>
+            Retorna as informações do entregador que está autenticado.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.MotorcycleBrandController">
+            <summary>
+            Controladora de marcas de motos.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleBrandController.GetMotorcycleBrandsAsync">
+            <summary>
+            Buscar marcas de motos.
+            </summary>
+            <remarks>
+            Obtêm as marcas de motos que estão registradas na aplicação.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.MotorcycleController">
+            <summary>
+            Controladora de motos.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleController.RegisterMotorcycleAsync(POC.Domain.Commands.Motorcycle.RegisterMotorcycleCommand)">
+            <summary>
+            Cadastrar nova moto.
+            </summary>
+            <remarks>
+            Registra uma nova moto para locação.
+            </remarks>
+            <param name="request">Payload.</param>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleController.GetAllMotorcycleAsync">
+            <summary>
+            Buscar motos.
+            </summary>
+            <remarks>
+            Obtêm as motos que estão registradas na aplicação.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleController.GetMotorcycleByFilterAsync(POC.Domain.Queries.Motorcycle.SearchMotorcyclesQuery)">
+            <summary>
+            Pesquisar motos.
+            </summary>
+            <remarks>
+            Obtêm as motos que estão registradas na aplicação aplicando filtros de pesquisa
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleController.RemoveMotorcycleAsync(System.Guid)">
+            <summary>
+            Remover moto
+            </summary>
+            <remarks>
+            Desabilitada a moto informada. Motos desabilitadas não podem ser alugadas.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.MotorcycleModelController">
+            <summary>
+            Controladora de marcas de moto.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcycleModelController.GetMotorcycleModelsAsync">
+            <summary>
+            Buscar modelos de motos.
+            </summary>
+            <remarks>
+            Obtêm os modelos de motos que estão registrados na aplicação.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.MotorcylceRentController">
+            <summary>
+            Controladora de locações de motos
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcylceRentController.GetRentalPlansAsync">
+            <summary>
+            Planos de locação
+            </summary>
+            <remarks>
+            Obtêm os planos de locação ativos no momento
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcylceRentController.RentMotorcycleAsync(POC.Domain.Commands.Rental.RentMotorcycleCommand)">
+            <summary>
+            Alugar uma moto
+            </summary>
+            <remarks>
+            Reserva uma moto para o entregador autenticado.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcylceRentController.FinalizeRentAsync">
+            <summary>
+            Finalizar locação.
+            </summary>
+            <remarks>
+            Encerraa locação que está em aberto. O entregador poderá realizar nova alocação. A moto ficará disponível para nova alocação.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.MotorcylceRentController.CheckRentalPriceAsync(POC.Domain.Queries.Rental.CheckRentalPriceQuery)">
+            <summary>
+            Consultar valor de devolução.
+            </summary>
+            <remarks>
+            Retorna o valor á ser pago pela locação na data desejada da entrega.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="T:POC.API.Controllers.OrderController">
+            <summary>
+            Controladora de pedidos.
+            </summary>
+        </member>
+        <member name="M:POC.API.Controllers.OrderController.RegisterOrderAsync(POC.Domain.Commands.Order.RegisterOrderCommand)">
+            <summary>
+            Cadastrar novo pedido
+            </summary>
+            <remarks>
+            Registra um novo pedido para entrega. Notifica entregadores disponíveis.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.OrderController.RegisterOrderAcceptedAsync(POC.Domain.Commands.Order.OrderAcceptedCommand)">
+            <summary>
+            Aceitar pedido.
+            </summary>
+            <remarks>
+            Altera o status do pedido para aceito. O motorista ficará indisponível até que o pedido seja concluído.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.OrderController.RegisterOrderFinishedAsync(POC.Domain.Commands.Order.OrderFinishedCommand)">
+            <summary>
+            Finalizar pedido.
+            </summary>
+            <remarks>
+            Encerra o pedido em aberto. O motorista ficará disponível assim que o pedido estiver encerrado.
+            </remarks>
+            <param name="request">Payload.</param>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+        </member>
+        <member name="M:POC.API.Controllers.OrderController.SearchOrdersAsync(POC.Domain.Queries.Order.SearchOrdersQuery)">
+            <summary>
+            Buscar pedidos.
+            </summary>
+            <remarks>
+            Obtêm a lista de pedidos registrados. Há 04 parâmetros de filtros, não opcionais.
+            </remarks>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+            TODO: Paginação
+        </member>
+        <member name="M:POC.API.Controllers.OrderController.GetOrderNotificationsAsync(POC.Domain.Queries.Order.GetOrderNotificationsQuery)">
+            <summary>
+            Buscar notificações enviadas para uma ordem.
+            </summary>
+            <remarks>
+            Retorna a lista de entregadores que receberam notificação de uma ordem.
+            </remarks>
+            <param name="request">Payload.</param>
+            <response code="200">
+            Operação executada com sucesso!
+            </response>
+            <response code="400">
+            Foi feita uma requisição inválida, erros de negócios foram detectados.
+            </response>
+            <response code="401">
+            Os dados de autorização são inválidos.
+            </response>
+            <response code="405">
+            O método HTTP utilizado não é permitido.
+            </response>
+            <response code="429">
+            Limite de requisições excedido.
+            </response>
+            <response code="500">
+            Falha interna do servidor.
+            </response>
+            TODO: Paginação
+        </member>
+    </members>
+</doc>

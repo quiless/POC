@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AzureStorage\" />
+    <None Remove="AzureStorage\Settings\" />
+    <None Remove="AzureStorage\Models\" />
+    <None Remove="AzureStorage\Inferfaces\" />
+    <None Remove="Domain\" />
+    <None Remove="Domain\Interfaces\" />
+    <None Remove="Domain\Models\" />
+    <None Remove="Domain\Enumerators\" />
+    <None Remove="Application\" />
+    <None Remove="SQL\" />
+    <None Remove="SQL\Transactions\" />
+    <None Remove="SQL\Transactions\Interfaces\" />
+    <None Remove="SQL\Repositories\" />
+    <None Remove="SQL\Repositories\Interfaces\" />
+    <None Remove="SQL\Repositories\Models\" />
+    <None Remove="SQL\Repositories\Builders\" />
+    <None Remove="Presentation\" />
+    <None Remove="Domain\Responses\" />
+    <None Remove="Domain\Responses\Interfaces\" />
+    <None Remove="SQL\Repositories\Extensions\" />
+    <None Remove="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AzureStorage\Settings\" />
+    <Folder Include="AzureStorage\Models\" />
+    <Folder Include="AzureStorage\Inferfaces\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Interfaces\" />
+    <Folder Include="Domain\Models\" />
+    <Folder Include="Domain\Enumerators\" />
+    <Folder Include="Application\" />
+    <Folder Include="SQL\" />
+    <Folder Include="SQL\Transactions\" />
+    <Folder Include="SQL\Transactions\Interfaces\" />
+    <Folder Include="SQL\Repositories\" />
+    <Folder Include="SQL\Repositories\Interfaces\" />
+    <Folder Include="SQL\Repositories\Models\" />
+    <Folder Include="SQL\Repositories\Builders\" />
+    <Folder Include="Presentation\" />
+    <Folder Include="Domain\Responses\" />
+    <Folder Include="Domain\Responses\Interfaces\" />
+    <Folder Include="SQL\Repositories\Extensions\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
+    <PackageReference Include="Microsoft.Azure.Storage.Common" Version="11.2.3" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Dommel" Version="3.3.0" />
+    <PackageReference Include="SqlKata" Version="3.0.0-beta" />
+    <PackageReference Include="SqlKata.Execution" Version="3.0.0-beta" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Npgsql" Version="8.0.2" />
+    <PackageReference Include="Dapper.FluentMap" Version="2.0.0" />
+    <PackageReference Include="Dapper.FluentMap.Dommel" Version="2.0.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.10" />
+  </ItemGroup>
+</Project>

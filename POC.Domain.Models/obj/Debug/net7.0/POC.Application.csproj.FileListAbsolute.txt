@@ -1,0 +1,15 @@
+/Users/jefferson/Projects/POC.Application/bin/Debug/net7.0/POC.Application.deps.json
+/Users/jefferson/Projects/POC.Application/bin/Debug/net7.0/POC.Application.dll
+/Users/jefferson/Projects/POC.Application/bin/Debug/net7.0/POC.Application.pdb
+/Users/jefferson/Projects/POC.Application/bin/Debug/net7.0/POC.Artifacts.dll
+/Users/jefferson/Projects/POC.Application/bin/Debug/net7.0/POC.Artifacts.pdb
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.csproj.AssemblyReference.cache
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.AssemblyInfoInputs.cache
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.AssemblyInfo.cs
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.csproj.CoreCompileInputs.cache
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.csproj.CopyComplete
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.dll
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/refint/POC.Application.dll
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/POC.Application.pdb
+/Users/jefferson/Projects/POC.Application/obj/Debug/net7.0/ref/POC.Application.dll

@@ -1,0 +1,12 @@
+/Users/jefferson/Projects/POC/POC.Artifacts/bin/Debug/net7.0/POC.Artifacts.deps.json
+/Users/jefferson/Projects/POC/POC.Artifacts/bin/Debug/net7.0/POC.Artifacts.dll
+/Users/jefferson/Projects/POC/POC.Artifacts/bin/Debug/net7.0/POC.Artifacts.pdb
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.csproj.AssemblyReference.cache
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.AssemblyInfoInputs.cache
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.AssemblyInfo.cs
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.csproj.CoreCompileInputs.cache
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.dll
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/refint/POC.Artifacts.dll
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/POC.Artifacts.pdb
+/Users/jefferson/Projects/POC/POC.Artifacts/obj/Debug/net7.0/ref/POC.Artifacts.dll

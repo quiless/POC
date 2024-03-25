@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{28C4690C-65B8-45F6-8E8A-CD971F39C5F6}|https">
+  <MonoDevelop.Ide.ItemProperties.POC.API FirstBuild="True" PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.POC.Artifacts FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="POC.Artifacts/Class1.cs">
+    <Files>
+      <File FileName="POC.Artifacts/Class1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
