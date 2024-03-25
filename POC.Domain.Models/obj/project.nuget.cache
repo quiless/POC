@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j92tNRxXC8Ldl3F4ZV8zufihuguYgGhq5UH5ES4JCAXxr9wzFOc2NZg/djlkC8I4dq6nQJDzkvUHeNobtqkW4A==",
+  "dgSpecHash": "KQ8ucCbdHjeIcHIR+mjiQGuRR8ueAWuL16TgKSpfwriwpGVYIfaMvhmrznSFnJJfN+ycT+ufWPo+zIfX9G3mXw==",
   "success": true,
-  "projectFilePath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
+  "projectFilePath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj",
   "expectedPackageFiles": [
     "/Users/jefferson/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
     "/Users/jefferson/.nuget/packages/dapper.fluentmap/2.0.0/dapper.fluentmap.2.0.0.nupkg.sha512",

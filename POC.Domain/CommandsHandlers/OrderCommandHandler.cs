@@ -133,6 +133,7 @@ namespace POC.Domain.CommandsHandlers
 
                         await this._orderNotificationRepository.InsertAsync(_orderNotification);
 
+                        var channel = $"{Domain.Models.Environments.Pubnub.Channels.DELIVERYMAN_CHANNEL}{ _deliveryman.DeliverymanUniqueId.ToString()}";
                         var publishResponse = await pubnub.Publish()
                             .Message(JsonConvert.SerializeObject(new {
                                 OrderId = notification.OrderId,
@@ -140,7 +141,7 @@ namespace POC.Domain.CommandsHandlers
                                 Price = notification.Price,
                                 NotificiationId = _orderNotification.Id
                             }))
-                            .Channel($"{Domain.Models.Environments.Pubnub.Channels.DELIVERYMAN_CHANNEL}{_deliveryman.DeliverymanUniqueId}")
+                            .Channel(channel)
                             .ExecuteAsync();
 
                         PNPublishResult publishResult = publishResponse.Result;
@@ -200,12 +201,19 @@ namespace POC.Domain.CommandsHandlers
                 return new GenericCommandResult();
             }
 
-            MotorcycleRental _motorcycleRental = await this._rentMotorcycleRepository.GetMotorcycleRentalWithOpenOrderByUserId(_applicationContextBase.CustomIdentity.UserId);
+            MotorcycleRental _motorcycleRental = await this._rentMotorcycleRepository.GetMotorcycleRentalOpenByUserId(_applicationContextBase.CustomIdentity.UserId);
 
 
             if (_motorcycleRental == null || _motorcycleRental.Id <= 0)
             {
                 _notifications.NotifyError("Não conseguimos obter os dados de sua alocação. Realize o login novamente.");
+                return new GenericCommandResult();
+            }
+
+
+            if (_motorcycleRental.HasOpenOrder)
+            {
+                _notifications.NotifyError("Você pode realizar apenas um pedido por vez. Finalize o pedido atual antes de aceitar novos pedidos.");
                 return new GenericCommandResult();
             }
 
@@ -225,7 +233,7 @@ namespace POC.Domain.CommandsHandlers
                 Commit();
             });
 
-            return new GenericCommandResult(true, "A corrida foi adicionada em sua rota!", _order);
+            return new GenericCommandResult(true, "O pedido foi adicionada em sua rota!", _order);
         }
 
         public async Task<GenericCommandResult> Handle(OrderFinishedCommand request, CancellationToken cancellationToken)
@@ -282,7 +290,7 @@ namespace POC.Domain.CommandsHandlers
                 Commit();
             });
 
-            return new GenericCommandResult(true, "A corrida foi adicionada em sua rota!", _order);
+            return new GenericCommandResult(true, "Pedido finalizado!", _order);
         }
     }
 }

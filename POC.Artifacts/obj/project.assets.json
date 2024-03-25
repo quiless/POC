@@ -8425,11 +8425,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj",
+      "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj",
       "projectName": "POC.Artifacts",
-      "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj",
+      "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj",
       "packagesPath": "/Users/jefferson/.nuget/packages/",
-      "outputPath": "/Users/jefferson/Projects/POC/POC.Artifacts/obj/",
+      "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jefferson/.nuget/NuGet/NuGet.Config"

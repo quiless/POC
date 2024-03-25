@@ -22,13 +22,13 @@ namespace POC.Infrastructure.SQLRepositories.Deliveryman
         public async Task<Domain.Models.Entities.Deliveryman> GetDeliverymanByCNPJ(string cnpj) =>
             await _dbContext.
                 Connection.
-                QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT id, name, cnpj, driverlicensenumber FROM deliveryman WHERE cnpj = @cnpj and isdeleted = false",
+                QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT uniqueid, id, name, cnpj, driverlicensenumber FROM deliveryman WHERE cnpj = @cnpj and isdeleted = false",
                                                                             new { cnpj = cnpj.OnlyNumbers() });
 
         public async Task<Domain.Models.Entities.Deliveryman> GetDeliverymanByDriverLicenseNumber(string driverLicenseNumber) =>
          await _dbContext.
              Connection.
-             QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT id, name, cnpj, driverlicensenumber FROM deliveryman WHERE driverlicensenumber = @driverlicensenumber and isdeleted = false",
+             QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT uniqueid, id, name, cnpj, driverlicensenumber FROM deliveryman WHERE driverlicensenumber = @driverlicensenumber and isdeleted = false",
                                                                             new { driverLicenseNumber = driverLicenseNumber.OnlyNumbers() });
 
         public async Task RefreshDeliverymanDriverLicenseFile(string driverLicenseFileRef, int deliverymanId) =>
@@ -40,7 +40,7 @@ namespace POC.Infrastructure.SQLRepositories.Deliveryman
         public async Task<Domain.Models.Entities.Deliveryman> GetDeliverymanLoggedByUserId(int userId) =>
             await _dbContext.
                 Connection.
-                QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT hasopenrent, id, name, cnpj, driverlicensenumber, birthdate, driverlicensenumber, driverlicensetypeid, driverlicensefilename, userid FROM deliveryman where userId = @userid",
+                QuerySingleOrDefaultAsync<Domain.Models.Entities.Deliveryman>(@"SELECT uniqueid, hasopenrent, id, name, cnpj, driverlicensenumber, birthdate, driverlicensenumber, driverlicensetypeid, driverlicensefilename, userid FROM deliveryman where userId = @userid",
                                                                                new { userId });
 
         public async Task UpdateDeliverymanCloseRent(int deliverymanId) =>

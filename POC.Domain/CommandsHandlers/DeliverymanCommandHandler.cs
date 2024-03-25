@@ -117,6 +117,11 @@ namespace POC.Domain.CommandsHandlers
 
             var _deliveryman = _deliverymanRepository.GetById(request.DeliverymanId);
 
+            if (_deliveryman == null || _deliveryman.Id == 0)
+            {
+                _notifications.NotifyError("Não conseguimos obter os seus dados para realizar a troca da imagem da CNH. Realize o login novamente.");
+                return new GenericCommandResult();
+            }
            
             //Verifica se o entregar logado é o mesmo da solicitação da Request, ou o usuário é um administrador da plataforma
             if (_deliveryman.UserId != _applicationContextBase.CustomIdentity.UserId && !_applicationContextBase.CustomIdentity.IsAdmin)

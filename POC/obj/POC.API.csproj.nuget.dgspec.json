@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jefferson/Projects/POC/POC/POC.API.csproj": {}
+    "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj": {}
   },
   "projects": {
-    "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
+    "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj",
+        "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj",
         "projectName": "POC.Artifacts",
-        "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj",
+        "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj",
         "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC/POC.Artifacts/obj/",
+        "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -120,14 +120,14 @@
         }
       }
     },
-    "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
+    "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
+        "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj",
         "projectName": "POC.Domain.Models",
-        "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj",
+        "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj",
         "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/obj/",
+        "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -143,8 +143,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj"
               }
             }
           }
@@ -178,14 +178,14 @@
         }
       }
     },
-    "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj": {
+    "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj",
+        "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj",
         "projectName": "POC.Domain",
-        "projectPath": "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj",
+        "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj",
         "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC/POC.Domain/obj/",
+        "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -201,8 +201,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj"
               }
             }
           }
@@ -250,14 +250,14 @@
         }
       }
     },
-    "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
+    "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj",
+        "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj",
         "projectName": "POC.Infrastructure",
-        "projectPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj",
+        "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj",
         "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/obj/",
+        "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -273,8 +273,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Domain.Models/POC.Domain.Models.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain.Models/POC.Domain.Models.csproj"
               }
             }
           }
@@ -314,14 +314,14 @@
         }
       }
     },
-    "/Users/jefferson/Projects/POC/POC/POC.API.csproj": {
+    "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jefferson/Projects/POC/POC/POC.API.csproj",
+        "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj",
         "projectName": "POC.API",
-        "projectPath": "/Users/jefferson/Projects/POC/POC/POC.API.csproj",
+        "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj",
         "packagesPath": "/Users/jefferson/.nuget/packages/",
-        "outputPath": "/Users/jefferson/Projects/POC/POC/obj/",
+        "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -337,14 +337,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj"
               },
-              "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj"
               },
-              "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
-                "projectPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj"
+              "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
+                "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj"
               }
             }
           }

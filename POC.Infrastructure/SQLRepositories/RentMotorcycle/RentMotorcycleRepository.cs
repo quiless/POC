@@ -82,7 +82,7 @@ namespace POC.Infrastructure.SQLRepositories.RentMotorcycle
 
 
         public async Task UpdateMotorcycleRentalUnavaliable(int motorcycleRentalId) =>
-            await _dbContext.Connection.ExecuteAsync("update motorcycleRental SET  hasopenorder = true, totalorders = totalorders + 1 WHERE id = @id",
+            await _dbContext.Connection.ExecuteAsync("update motorcycleRental SET  hasopenorder = true, totalorders = COALESCE(totalorders,0) + 1 WHERE id = @id",
                                                 new { id = motorcycleRentalId },
                                                 transaction: _dbContext.Transaction);
 
@@ -114,7 +114,7 @@ namespace POC.Infrastructure.SQLRepositories.RentMotorcycle
                                                                         and UserInfo.id = @userid", new { id = userId });
 
         public async Task<MotorcycleRental> GetMotorcycleRentalOpenByUserId(int userId) =>
-          await _dbContext.Connection.QuerySingleOrDefaultAsync<MotorcycleRental>(@" SELECT motorcycleid, motorcyclerental.id, deliverymanid, motorcyclerental.motorcyclerentalplanid, startdate, expectedenddate
+          await _dbContext.Connection.QuerySingleOrDefaultAsync<MotorcycleRental>(@" SELECT motorcycleid, motorcyclerental.id, deliverymanid, motorcyclerental.motorcyclerentalplanid, startdate, expectedenddate, hasopenorder
 
                                                                         FROM motorcyclerental motorcyclerental
 
@@ -131,7 +131,7 @@ namespace POC.Infrastructure.SQLRepositories.RentMotorcycle
 
 
         public async Task SumTotalAmount(decimal price, int motorcycleRentalId) =>
-            await _dbContext.Connection.ExecuteAsync("update motorcycleRental SET totalValueGenerated = totalValueGenerated + @price WHERE id = @id",
+            await _dbContext.Connection.ExecuteAsync("update motorcycleRental SET totalValueGenerated = COALESCE(totalValueGenerated,0) + @price WHERE id = @id",
                                                 new { id = motorcycleRentalId, price },
                                                 transaction: _dbContext.Transaction);
 

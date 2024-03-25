@@ -9,7 +9,7 @@ namespace POC.Artifacts.Helpers
 		{
             byte[] data = System.Text.Encoding.ASCII.GetBytes(inputString);
             data = System.Security.Cryptography.SHA256.HashData(data);
-            return System.Text.Encoding.ASCII.GetString(data);
+            return System.Text.Encoding.ASCII.GetString(data).Replace("\u0000", "");
         }
 
         public static bool IsCNPJ(this string cnpj)

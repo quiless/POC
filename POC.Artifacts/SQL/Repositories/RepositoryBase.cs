@@ -54,7 +54,7 @@ namespace POC.Artifacts.SQL.Repositories
 
         public virtual async Task<IEnumerable<TEntity>> GetAsync()
         {
-            var query = _db.Query(_tableName);
+            var query = _db.Query(_tableName).Where("isdeleted", "=", false);
 
             return await query.GetAsync<TEntity>(transaction: _dbContext.Transaction);
         }

@@ -8,7 +8,6 @@ namespace POC.Domain.Commands.Order
 	public class OrderAcceptedCommand: IRequest<GenericCommandResult>
 	{
 		public int OrderId { get; set; }
-        public int NotificationId { get; set; }
     }
 
 
@@ -19,10 +18,6 @@ namespace POC.Domain.Commands.Order
             RuleFor(x => x.OrderId)
                     .Must(x => x > 0)
                     .WithMessage("Pedido inválido.");
-
-            RuleFor(x => x.NotificationId)
-                  .Must(x => x > 0)
-                  .WithMessage("Não foi possível processar sua notificação. Estamos trabalhando para corrigir o erro.");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace POC.Infrastructure.SQLRepositories.Order
         public async Task<bool> ValidateOrderNotification(int motorcycleRentalId, int orderId) =>
             await _dbContext.
                     Connection.
-                    QuerySingleAsync<bool>("SELECT count(1) > 1 from ordernotification where motorcyclerentalid = @motorcycleRentalId and orderid = @orderId and isdeleted = false",
+                    QuerySingleAsync<bool>("SELECT count(1) > 0 from ordernotification where motorcyclerentalid = @motorcycleRentalId and orderid = @orderId and isdeleted = false",
                                             new { orderId, motorcycleRentalId });
 
 

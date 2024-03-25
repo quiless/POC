@@ -11365,11 +11365,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jefferson/Projects/POC/POC/POC.API.csproj",
+      "projectUniqueName": "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj",
       "projectName": "POC.API",
-      "projectPath": "/Users/jefferson/Projects/POC/POC/POC.API.csproj",
+      "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC/POC.API.csproj",
       "packagesPath": "/Users/jefferson/.nuget/packages/",
-      "outputPath": "/Users/jefferson/Projects/POC/POC/obj/",
+      "outputPath": "/Users/jefferson/Projects/POCC333/POC/POC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jefferson/.nuget/NuGet/NuGet.Config"
@@ -11385,14 +11385,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC/POC.Artifacts/POC.Artifacts.csproj"
+            "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj": {
+              "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Artifacts/POC.Artifacts.csproj"
             },
-            "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC/POC.Domain/POC.Domain.csproj"
+            "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj": {
+              "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Domain/POC.Domain.csproj"
             },
-            "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
-              "projectPath": "/Users/jefferson/Projects/POC/POC.Infrastructure/POC.Infrastructure.csproj"
+            "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj": {
+              "projectPath": "/Users/jefferson/Projects/POCC333/POC/POC.Infrastructure/POC.Infrastructure.csproj"
             }
           }
         }

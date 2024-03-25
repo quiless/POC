@@ -19,7 +19,7 @@
                 userId: createUUID()
             });
 
-            const channel = pubnub.channel('deliveryman_channel_3bd39184-f2f3-4ff1-843b-0cef55911e86');
+            const channel = pubnub.channel('deliveryman_channel_99d1a988-7b62-4e6f-9774-600e7ebd2f18');
 
             const subscription = channel.subscription();
 
@@ -27,6 +27,7 @@
 
             subscription.onMessage = (messageEvent) => {
 
+               
                 let _pubnubMessage = JSON.parse(messageEvent.message);
 
                 console.log(_pubnubMessage);
@@ -39,14 +40,6 @@
                     confirmButtonColor: "#13B421",
                     confirmButtonText: "Aceitar!",
                     timer: 5000
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: "Deleted!",
-                            text: "Your file has been deleted.",
-                            icon: "success"
-                        });
-                    }
                 });
             };
 
@@ -58,6 +51,8 @@
             );
         }
 
+
+        console.log("aqui");
 
        
 
